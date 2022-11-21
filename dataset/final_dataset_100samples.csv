@@ -1,0 +1,108 @@
+Accident_Index;Number_of_Vehicles;Number_of_Casualties;Date;Time;Speed_limit;Road_conditions;Weather_conditions;Day;Road_type;Light_conditions;biker_gender;biker_severity_injury;biker_age_group
+19954100B0030;2;1;1995-01-25;22:45;30.0;Wet;Clear and windy;Wednesday;Single carriageway;Darkness lights lit;Male;Slight;26 to 35
+19954100B0031;2;1;1995-01-26;17:30;60.0;Wet;Clear and windy;Thursday;Single carriageway;Darkness lights lit;Male;Slight;26 to 35
+19954100B0043;2;1;1995-01-24;06:40;50.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100B0050;2;1;1995-02-21;11:00;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0056;2;1;1995-02-22;19:10;30.0;Snow;Snow and windy;Wednesday;Roundabout;Darkness lights lit;Male;Slight;26 to 35
+19954100B0058;2;1;1995-02-03;12:30;30.0;Dry;Clear;Thursday;Roundabout;Daylight;Female;Slight;21 to 25
+19954100B0060;2;1;1995-05-03;13:30;60.0;Dry;Clear;Sunday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0065;2;2;1995-12-03;20:25;70.0;Dry;Clear;Sunday;Dual carriageway;Darkness no lights;Female;Serious;56 to 65
+19954100B0069;2;1;1995-12-03;11:05;60.0;Dry;Clear;Sunday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100B0083;2;1;1995-03-23;16:00;30.0;Dry;Clear;Thursday;Roundabout;Daylight;Male;Slight;21 to 25
+19954100B0097;2;1;1995-11-04;17:30;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Female;Slight;21 to 25
+19954100B0098;2;1;1995-04-16;09:55;40.0;Dry;Clear;Sunday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0099;2;1;1995-04-19;08:00;60.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Female;Slight;21 to 25
+19954100B0103;2;1;1995-04-23;17:40;30.0;Dry;Clear;Sunday;Single carriageway;Daylight;Female;Serious;46 to 55
+19954100B0123;2;2;1995-05-17;09:45;30.0;Wet;Rain;Wednesday;Roundabout;Daylight;Female;Slight;16 to 20
+19954100B0136;2;1;1995-02-06;14:00;60.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100B0146;2;1;1995-12-06;18:20;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;21 to 25
+19954100B0150;2;1;1995-06-16;19:15;30.0;Dry;Clear;Friday;Dual carriageway;Daylight;Male;Slight;36 to 45
+19954100B0153;2;1;1995-06-14;17:30;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100B0160;2;2;1995-06-22;19:00;70.0;Dry;Clear;Thursday;Dual carriageway;Daylight;Male;Serious;11 to 15
+19954100B0163;2;1;1995-06-30;18:45;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0184;1;2;1995-07-17;17:45;60.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100B0188;2;1;1995-07-22;19:40;70.0;Dry;Clear;Saturday;Roundabout;Daylight;Male;Serious;46 to 55
+19954100B0194;2;1;1995-07-25;17:30;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100B0198;2;1;1995-07-30;20:26;70.0;Dry;Clear;Sunday;Unknown;Daylight;Male;Slight;26 to 35
+19954100B0207;2;1;1995-08-08;08:05;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100B0216;2;1;1995-08-22;15:55;60.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100B0220;2;1;1995-08-25;16:00;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0222;2;2;1995-08-24;15:15;30.0;Dry;Clear;Thursday;Single carriageway;Daylight;Female;Serious;6 to 10
+19954100B0229;2;1;1995-05-09;12:05;50.0;Dry;Clear;Tuesday;Dual carriageway;Daylight;Male;Slight;11 to 15
+19954100B0232;2;1;1995-07-09;17:38;40.0;Wet;Rain;Thursday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100B0238;2;1;1995-07-09;07:25;30.0;Wet;Unknown;Thursday;Single carriageway;Daylight;Female;Slight;16 to 20
+19954100B0248;2;1;1995-09-18;18:00;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0249;2;1;1995-09-22;08:40;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;46 to 55
+19954100B0253;2;1;1995-09-29;07:30;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;36 to 45
+19954100B0257;2;1;1995-05-10;08:15;40.0;Dry;Clear;Thursday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0262;2;1;1995-04-10;09:15;30.0;Wet;Rain;Wednesday;Single carriageway;Daylight;Male;Serious;66 to 75
+19954100B0269;2;1;1995-09-10;16:55;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100B0277;2;1;1995-09-28;13:50;30.0;Dry;Clear;Thursday;Roundabout;Daylight;Male;Slight;36 to 45
+19954100B0284;2;1;1995-10-24;19:45;30.0;Dry;Clear and windy;Tuesday;Single carriageway;Darkness lights lit;Male;Slight;11 to 15
+19954100B0285;2;1;1995-10-23;10:45;60.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100B0295;2;1;1995-05-11;14:00;30.0;Dry;Clear;Sunday;Roundabout;Daylight;Male;Slight;16 to 20
+19954100B0304;2;1;1995-11-11;13:15;30.0;Wet;Clear;Saturday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100B0319;2;1;1995-11-18;18:43;40.0;Wet;Clear;Saturday;Roundabout;Darkness lights lit;Male;Slight;21 to 25
+19954100B0322;2;1;1995-11-13;09:30;30.0;Wet;Unknown;Monday;Roundabout;Daylight;Male;Slight;36 to 45
+19954100B0343;2;1;1995-04-12;07:20;30.0;Wet;Unknown;Monday;Roundabout;Darkness no lights;Male;Slight;26 to 35
+19954100B0353;2;1;1995-12-13;17:10;30.0;Dry;Clear;Wednesday;Dual carriageway;Darkness lights lit;Female;Slight;21 to 25
+19954100B0360;2;1;1995-12-19;22:30;30.0;Wet;Rain and windy;Tuesday;Single carriageway;Darkness lights lit;Male;Serious;36 to 45
+19954100C0035;2;2;1995-01-19;08:15;30.0;Frost;Clear;Thursday;Single carriageway;Daylight;Female;Serious;56 to 65
+19954100C0048;2;2;1995-01-21;11:38;30.0;Wet;Rain and windy;Saturday;Roundabout;Daylight;Male;Slight;16 to 20
+19954100C0057;2;1;1995-01-22;09:20;30.0;Wet;Unknown;Sunday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100C0067;2;2;1995-01-28;20:25;30.0;Wet;Rain;Saturday;Single carriageway;Darkness lights lit;Male;Slight;26 to 35
+19954100C0080;2;1;1995-04-02;14:00;30.0;Dry;Clear;Saturday;Single carriageway;Daylight;Male;Serious;21 to 25
+19954100C0081;2;1;1995-03-02;07:47;70.0;Wet;Clear;Friday;Roundabout;Daylight;Male;Serious;36 to 45
+19954100C0089;2;1;1995-06-02;08:10;30.0;Wet;Clear;Monday;Single carriageway;Daylight;Male;Serious;21 to 25
+19954100C0091;2;1;1995-06-02;20:20;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;46 to 55
+19954100C0093;3;1;1995-04-02;12:30;40.0;Dry;Clear;Saturday;Roundabout;Daylight;Other;Slight;16 to 20
+19954100C0101;2;1;1995-01-16;12:30;30.0;Dry;Clear;Monday;Roundabout;Daylight;Male;Slight;26 to 35
+19954100C0124;2;1;1995-02-16;18:00;30.0;Wet;Other;Thursday;Roundabout;Darkness lights lit;Male;Slight;26 to 35
+19954100C0136;2;1;1995-02-24;12:30;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100C0161;2;1;1995-08-03;16:45;30.0;Wet;Clear;Wednesday;Unknown;Daylight;Male;Slight;16 to 20
+19954100C0184;2;1;1995-03-15;10:40;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Female;Slight;16 to 20
+19954100C0216;2;1;1995-03-23;16:50;30.0;Dry;Clear;Thursday;Single carriageway;Daylight;Male;Slight;36 to 45
+19954100C0221;2;1;1995-03-28;21:00;30.0;Wet;Clear;Tuesday;Single carriageway;Darkness lights lit;Male;Slight;16 to 20
+19954100C0222;2;1;1995-03-04;17:30;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Female;Serious;6 to 10
+19954100C0229;2;1;1995-05-04;08:00;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100C0234;2;1;1995-12-04;07:45;30.0;Dry;Clear;Wednesday;Dual carriageway;Daylight;Male;Slight;46 to 55
+19954100C0243;2;1;1995-04-17;14:20;30.0;Wet;Rain;Monday;Single carriageway;Daylight;Male;Serious;16 to 20
+19954100C0250;2;1;1995-04-20;12:15;30.0;Dry;Clear;Thursday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0256;2;2;1995-04-21;15:09;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Serious;6 to 10
+19954100C0264;2;1;1995-04-24;16:40;30.0;Dry;Clear;Monday;Roundabout;Daylight;Male;Slight;26 to 35
+19954100C0281;2;1;1995-02-05;08:30;60.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100C0285;2;2;1995-03-04;17:05;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0286;2;1;1995-03-05;17:40;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100C0294;2;1;1995-05-05;17:30;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0306;2;1;1995-10-05;17:45;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Serious;16 to 20
+19954100C0316;2;1;1995-05-16;09:30;30.0;Dry;Clear;Tuesday;Roundabout;Daylight;Male;Slight;46 to 55
+19954100C0336;2;1;1995-05-26;17:05;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100C0355;2;1;1995-05-06;17:20;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100C0357;2;1;1995-10-06;12:55;30.0;Dry;Clear;Saturday;Unknown;Daylight;Male;Slight;6 to 10
+19954100C0358;2;1;1995-11-06;12:43;30.0;Wet;Rain;Sunday;Single carriageway;Daylight;Male;Serious;56 to 65
+19954100C0359;2;4;1995-06-13;16:35;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100C0361;2;1;1995-10-06;15:52;30.0;Dry;Clear;Saturday;Single carriageway;Daylight;Male;Serious;11 to 15
+19954100C0367;2;1;1995-05-06;16:00;30.0;Dry;Clear;Monday;Dual carriageway;Daylight;Female;Slight;46 to 55
+19954100C0380;2;1;1995-06-20;09:33;30.0;Dry;Clear;Tuesday;Roundabout;Daylight;Male;Slight;21 to 25
+19954100C0397;2;2;1995-06-27;10:21;30.0;Dry;Clear;Tuesday;Single carriageway;Daylight;Female;Slight;26 to 35
+19954100C0422;2;1;1995-10-07;17:00;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Serious;6 to 10
+19954100C0427;2;1;1995-07-16;15:50;30.0;Dry;Clear;Sunday;Dual carriageway;Daylight;Female;Slight;21 to 25
+19954100C0433;2;1;1995-07-19;08:25;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Female;Slight;11 to 15
+19954100C0463;2;1;1995-07-29;14:00;30.0;Dry;Clear;Saturday;Single carriageway;Daylight;Male;Slight;26 to 35
+19954100C0465;2;1;1995-02-08;19:15;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0469;2;1;1995-02-08;17:50;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;46 to 55
+19954100C0480;2;1;1995-08-14;07:08;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Female;Serious;56 to 65
+19954100C0481;2;1;1995-10-08;11:50;30.0;Dry;Clear;Thursday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0484;2;1;1995-11-08;07:15;30.0;Dry;Clear;Friday;Single carriageway;Daylight;Female;Slight;16 to 20
+19954100C0487;2;1;1995-08-14;19:05;30.0;Dry;Clear;Monday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100C0493;3;2;1995-08-17;12:30;30.0;Dry;Clear;Thursday;Single carriageway;Daylight;Male;Slight;6 to 10
+19954100C0499;2;1;1995-08-24;12:24;30.0;Dry;Clear;Thursday;Roundabout;Daylight;Male;Slight;16 to 20
+19954100C0503;2;1;1995-08-23;13:49;30.0;Wet;Rain;Wednesday;Dual carriageway;Daylight;Male;Slight;21 to 25
+19954100C0526;2;2;1995-03-09;11:00;30.0;Dry;Clear;Sunday;Single carriageway;Daylight;Male;Slight;21 to 25
+19954100C0537;2;1;1995-08-09;06:45;30.0;Wet;Clear;Friday;Dual carriageway;Daylight;Male;Slight;11 to 15
+19954100C0539;2;2;1995-09-09;16:39;30.0;Dry;Clear;Saturday;Single carriageway;Daylight;Male;Serious;11 to 15
+19954100C0540;2;1;1995-09-09;12:25;30.0;Dry;Clear;Saturday;Single carriageway;Daylight;Male;Slight;11 to 15
+19954100C0542;2;1;1995-08-23;16:30;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100C0549;2;1;1995-12-09;16:10;30.0;Dry;Clear;Tuesday;Roundabout;Daylight;Male;Slight;21 to 25
+19954100C0558;2;1;1995-09-13;15:31;30.0;Dry;Clear;Wednesday;Single carriageway;Daylight;Male;Slight;16 to 20
+19954100C0579;2;1;1995-09-26;14:50;30.0;Wet;Rain;Tuesday;Roundabout;Daylight;Male;Slight;36 to 45
