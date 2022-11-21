@@ -1,0 +1,2037 @@
+<?xml version="1.0"?>
+<?xml-model href="schema_bycicle_accidents.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<accidents>
+  <Accident Accident_Index="19954100B0030">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-01-25</Date>
+    <Time>22:45</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear and windy</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0031">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-01-26</Date>
+    <Time>17:30</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear and windy</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0043">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-01-24</Date>
+    <Time>06:40</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>50.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0050">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-21</Date>
+    <Time>11:00</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0056">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-22</Date>
+    <Time>19:10</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Snow</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Snow and windy</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0058">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-03</Date>
+    <Time>12:30</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0060">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-03</Date>
+    <Time>13:30</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0065">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-12-03</Date>
+    <Time>20:25</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>70.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Darkness no lights</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>56 to 65</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0069">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-03</Date>
+    <Time>11:05</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0083">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-23</Date>
+    <Time>16:00</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0097">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-04</Date>
+    <Time>17:30</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0098">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-16</Date>
+    <Time>09:55</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>40.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0099">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-19</Date>
+    <Time>08:00</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0103">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-23</Date>
+    <Time>17:40</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0123">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-05-17</Date>
+    <Time>09:45</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0136">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-06</Date>
+    <Time>14:00</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0146">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-06</Date>
+    <Time>18:20</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0150">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-16</Date>
+    <Time>19:15</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0153">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-14</Date>
+    <Time>17:30</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0160">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-06-22</Date>
+    <Time>19:00</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>70.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0163">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-30</Date>
+    <Time>18:45</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0184">
+    <N_vehicules>1</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-07-17</Date>
+    <Time>17:45</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0188">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-22</Date>
+    <Time>19:40</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>70.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0194">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-25</Date>
+    <Time>17:30</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0198">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-30</Date>
+    <Time>20:26</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>70.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Unknown</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0207">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-08</Date>
+    <Time>08:05</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0216">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-22</Date>
+    <Time>15:55</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0220">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-25</Date>
+    <Time>16:00</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0222">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-08-24</Date>
+    <Time>15:15</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0229">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-09</Date>
+    <Time>12:05</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>50.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0232">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-09</Date>
+    <Time>17:38</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>40.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0238">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-09</Date>
+    <Time>07:25</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Unknown</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0248">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-18</Date>
+    <Time>18:00</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0249">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-22</Date>
+    <Time>08:40</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0253">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-29</Date>
+    <Time>07:30</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0257">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-10</Date>
+    <Time>08:15</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>40.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0262">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-10</Date>
+    <Time>09:15</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>66 to 75</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0269">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-10</Date>
+    <Time>16:55</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0277">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-28</Date>
+    <Time>13:50</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0284">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-24</Date>
+    <Time>19:45</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear and windy</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0285">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-23</Date>
+    <Time>10:45</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0295">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-11</Date>
+    <Time>14:00</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0304">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-11</Date>
+    <Time>13:15</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0319">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-18</Date>
+    <Time>18:43</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>40.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0322">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-13</Date>
+    <Time>09:30</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Unknown</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0343">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-12</Date>
+    <Time>07:20</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Unknown</Weather_conditions>
+      <Light_conditions>Darkness no lights</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0353">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-13</Date>
+    <Time>17:10</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100B0360">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-19</Date>
+    <Time>22:30</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain and windy</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0035">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-01-19</Date>
+    <Time>08:15</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Frost</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>56 to 65</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0048">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-01-21</Date>
+    <Time>11:38</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Rain and windy</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0057">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-01-22</Date>
+    <Time>09:20</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Unknown</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0067">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-01-28</Date>
+    <Time>20:25</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0080">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-02</Date>
+    <Time>14:00</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0081">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-02</Date>
+    <Time>07:47</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>70.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0089">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-02</Date>
+    <Time>08:10</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0091">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-02</Date>
+    <Time>20:20</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0093">
+    <N_vehicules>3</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-02</Date>
+    <Time>12:30</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>40.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Other</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0101">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-01-16</Date>
+    <Time>12:30</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0124">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-16</Date>
+    <Time>18:00</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Other</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0136">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-24</Date>
+    <Time>12:30</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0161">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-03</Date>
+    <Time>16:45</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Unknown</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0184">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-15</Date>
+    <Time>10:40</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0216">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-23</Date>
+    <Time>16:50</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0221">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-28</Date>
+    <Time>21:00</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Darkness lights lit</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0222">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-04</Date>
+    <Time>17:30</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0229">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-04</Date>
+    <Time>08:00</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0234">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-04</Date>
+    <Time>07:45</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0243">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-17</Date>
+    <Time>14:20</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0250">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-20</Date>
+    <Time>12:15</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0256">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-04-21</Date>
+    <Time>15:09</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0264">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-04-24</Date>
+    <Time>16:40</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0281">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-05</Date>
+    <Time>08:30</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>60.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0285">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-03-04</Date>
+    <Time>17:05</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0286">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-03-05</Date>
+    <Time>17:40</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0294">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-05</Date>
+    <Time>17:30</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0306">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-05</Date>
+    <Time>17:45</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0316">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-16</Date>
+    <Time>09:30</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0336">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-26</Date>
+    <Time>17:05</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0355">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-06</Date>
+    <Time>17:20</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0357">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-06</Date>
+    <Time>12:55</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Unknown</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0358">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-06</Date>
+    <Time>12:43</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>56 to 65</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0359">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>4</N_casualties>
+    <Date>1995-06-13</Date>
+    <Time>16:35</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0361">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-06</Date>
+    <Time>15:52</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0367">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-05-06</Date>
+    <Time>16:00</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0380">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-06-20</Date>
+    <Time>09:33</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0397">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-06-27</Date>
+    <Time>10:21</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0422">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-07</Date>
+    <Time>17:00</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0427">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-16</Date>
+    <Time>15:50</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0433">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-19</Date>
+    <Time>08:25</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0463">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-07-29</Date>
+    <Time>14:00</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>26 to 35</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0465">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-08</Date>
+    <Time>19:15</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0469">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-02-08</Date>
+    <Time>17:50</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>46 to 55</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0480">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-14</Date>
+    <Time>07:08</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>56 to 65</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0481">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-10-08</Date>
+    <Time>11:50</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0484">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-11-08</Date>
+    <Time>07:15</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Female</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0487">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-14</Date>
+    <Time>19:05</Time>
+    <Week_day>Monday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0493">
+    <N_vehicules>3</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-08-17</Date>
+    <Time>12:30</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>6 to 10</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0499">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-24</Date>
+    <Time>12:24</Time>
+    <Week_day>Thursday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0503">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-23</Date>
+    <Time>13:49</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0526">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-03-09</Date>
+    <Time>11:00</Time>
+    <Week_day>Sunday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0537">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-09</Date>
+    <Time>06:45</Time>
+    <Week_day>Friday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Dual carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0539">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>2</N_casualties>
+    <Date>1995-09-09</Date>
+    <Time>16:39</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Serious</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0540">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-09</Date>
+    <Time>12:25</Time>
+    <Week_day>Saturday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>11 to 15</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0542">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-08-23</Date>
+    <Time>16:30</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0549">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-12-09</Date>
+    <Time>16:10</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>21 to 25</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0558">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-13</Date>
+    <Time>15:31</Time>
+    <Week_day>Wednesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Dry</Road_conditions>
+      <Road_type>Single carriageway</Road_type>
+      <Weather_conditions>Clear</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>16 to 20</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+  <Accident Accident_Index="19954100C0579">
+    <N_vehicules>2</N_vehicules>
+    <N_casualties>1</N_casualties>
+    <Date>1995-09-26</Date>
+    <Time>14:50</Time>
+    <Week_day>Tuesday</Week_day>
+    <Conditions>
+      <Speed_limit>30.0</Speed_limit>
+      <Road_conditions>Wet</Road_conditions>
+      <Road_type>Roundabout</Road_type>
+      <Weather_conditions>Rain</Weather_conditions>
+      <Light_conditions>Daylight</Light_conditions>
+    </Conditions>
+    <Biker>
+      <biker_gender>Male</biker_gender>
+      <biker_age_group>36 to 45</biker_age_group>
+      <biker_severity_injury>Slight</biker_severity_injury>
+    </Biker>
+  </Accident>
+</accidents>

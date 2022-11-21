@@ -1,0 +1,72 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="accidents">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="Accident">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="N_vehicules" type="xs:integer"></xs:element>
+                            <xs:element name="N_casualties" type="xs:integer"></xs:element>
+                            <xs:element name="Date" type="xs:date"></xs:element>
+                            <xs:element name="Time" type="xs:string"></xs:element>
+                            <xs:element name="Week_day" type="xs:string"></xs:element>
+                            <xs:element name="Conditions">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Speed_limit" type="xs:double"></xs:element>
+                                        <xs:element name="Road_conditions" type="xs:string"></xs:element>
+                                        <xs:element name="Road_type" type="xs:string"></xs:element>
+                                        <xs:element name="Weather_conditions" type="xs:string"></xs:element>
+                                        <xs:element name="Light_conditions" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Biker">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="biker_gender">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Male"/>
+                                                    <xs:enumeration value="Female"/>
+                                                    <xs:enumeration value="Other"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="biker_age_group">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="6 to 10"/>
+                                                    <xs:enumeration value="11 to 15"/>
+                                                    <xs:enumeration value="16 to 20"/>
+                                                    <xs:enumeration value="21 to 25"/>
+                                                    <xs:enumeration value="26 to 35"/>
+                                                    <xs:enumeration value="36 to 45"/>
+                                                    <xs:enumeration value="46 to 55"/>
+                                                    <xs:enumeration value="56 to 65"/>
+                                                    <xs:enumeration value="66 to 75"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="biker_severity_injury">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Slight"/>
+                                                    <xs:enumeration value="Serious"/>
+                                                    <xs:enumeration value="Fatal"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                                                        
+                        </xs:sequence>
+                        <xs:attribute name="Accident_Index" type="xs:string"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

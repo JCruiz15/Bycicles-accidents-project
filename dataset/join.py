@@ -2,9 +2,11 @@
 
 import math
 import pandas as pd
+import os
+import seaborn as sns
 
-accidents = pd.read_csv("Accidents.csv")
-bikers = pd.read_csv("Bikers.csv")
+accidents = pd.read_csv("./Bycicles-accidents-project/dataset/Accidents.csv")
+bikers = pd.read_csv("./Bycicles-accidents-project/dataset/Bikers.csv")
 bikers = bikers.rename({'Gender': 'biker_gender', 'Severity': 'biker_severity_injury', 'Age_Grp': 'biker_age_group'}, axis=1)  
 
 result = pd.merge(accidents, bikers, on="Accident_Index")
