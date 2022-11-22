@@ -22,9 +22,9 @@
                         <xsl:value-of select="Week_day" /> - <xsl:value-of select="Date" /> - <xsl:value-of select="Time" />       
                     </Fecha>
 
-                    <Vehículos_involucrados>
+                    <Vehiculos_involucrados>
                         <xsl:value-of select="N_vehicules" />        
-                    </Vehículos_involucrados>
+                    </Vehiculos_involucrados>
 
                     <Damnificados> <xsl:value-of select="N_casualties" /> </Damnificados>
 
@@ -55,9 +55,9 @@
                 </Condiciones>
 
                 <Ciclista>
-                    <Género>                   
+                    <Genero>                   
                          <xsl:value-of select="Biker/biker_gender" />
-                    </Género>
+                    </Genero>
 
                     <Edad>
                         <xsl:value-of select="Biker/biker_age_group" />
