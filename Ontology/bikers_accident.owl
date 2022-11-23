@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roads"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity_Injuries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accident_conditions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accident_related"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#accident_severity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#biker_affected"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#biker_injury"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age_group"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#casualties_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#light_conditions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#road_conditions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#road_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#speed_limit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#vehicles_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weather_conditions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#week_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AP-7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biker_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biker_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediterranean_Weather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Serious"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Slight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#truck_biker_1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Roads"/>
+        <Class IRI="#Conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#Conditions"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Roads"/>
+        <NamedIndividual IRI="#AP-7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biker"/>
+        <NamedIndividual IRI="#Biker_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Biker"/>
+        <NamedIndividual IRI="#Biker_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity_Injuries"/>
+        <NamedIndividual IRI="#Fatal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather"/>
+        <NamedIndividual IRI="#Mediterranean_Weather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity_Injuries"/>
+        <NamedIndividual IRI="#Serious"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severity_Injuries"/>
+        <NamedIndividual IRI="#Slight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Accident"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Biker_1"/>
+        <NamedIndividual IRI="#Biker_2"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#biker_affected"/>
+        <NamedIndividual IRI="#Biker_1"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#biker_injury"/>
+        <NamedIndividual IRI="#Biker_1"/>
+        <NamedIndividual IRI="#Serious"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#biker_injury"/>
+        <NamedIndividual IRI="#Biker_2"/>
+        <NamedIndividual IRI="#Fatal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#accident_conditions"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <NamedIndividual IRI="#AP-7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#accident_conditions"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <NamedIndividual IRI="#Mediterranean_Weather"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#accident_related"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <NamedIndividual IRI="#Biker_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#accident_severity"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <NamedIndividual IRI="#Serious"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#road_conditions"/>
+        <NamedIndividual IRI="#AP-7"/>
+        <Literal>Wet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#road_type"/>
+        <NamedIndividual IRI="#AP-7"/>
+        <Literal>Single carriageway</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#speed_limit"/>
+        <NamedIndividual IRI="#AP-7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">60.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age_group"/>
+        <NamedIndividual IRI="#Biker_1"/>
+        <Literal>26 to 35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Biker_1"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age_group"/>
+        <NamedIndividual IRI="#Biker_2"/>
+        <Literal>11 to 15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gender"/>
+        <NamedIndividual IRI="#Biker_2"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#light_conditions"/>
+        <NamedIndividual IRI="#Mediterranean_Weather"/>
+        <Literal>Daylight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#weather_conditions"/>
+        <NamedIndividual IRI="#Mediterranean_Weather"/>
+        <Literal>Clear</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#casualties_number"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#date"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <Literal>1995-01-25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#time"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <Literal>17:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#vehicles_number"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#week_day"/>
+        <NamedIndividual IRI="#truck_biker_1"/>
+        <Literal>Monday</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#accident_related"/>
+        <ObjectProperty IRI="#biker_affected"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#accident_severity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#biker_injury"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#accident_conditions"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#accident_severity"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#biker_injury"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#accident_conditions"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accident_conditions"/>
+        <Class IRI="#Accident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accident_related"/>
+        <Class IRI="#Biker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#accident_severity"/>
+        <Class IRI="#Accident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#biker_affected"/>
+        <Class IRI="#Accident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#biker_injury"/>
+        <Class IRI="#Biker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accident_conditions"/>
+        <Class IRI="#Conditions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accident_related"/>
+        <Class IRI="#Accident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#accident_severity"/>
+        <Class IRI="#Severity_Injuries"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#biker_affected"/>
+        <Class IRI="#Biker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#biker_injury"/>
+        <Class IRI="#Severity_Injuries"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age_group"/>
+        <Class IRI="#Biker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#casualties_number"/>
+        <Class IRI="#Accident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#date"/>
+        <Class IRI="#Accident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <Class IRI="#Biker"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#light_conditions"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#road_conditions"/>
+        <Class IRI="#Roads"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#road_type"/>
+        <Class IRI="#Roads"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#speed_limit"/>
+        <Class IRI="#Roads"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#time"/>
+        <Class IRI="#Accident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#vehicles_number"/>
+        <Class IRI="#Accident"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weather_conditions"/>
+        <Class IRI="#Weather"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#week_day"/>
+        <Class IRI="#Accident"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age_group"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age_group"/>
+        <DataOneOf>
+            <Literal>11 to 15</Literal>
+            <Literal>16 to 20</Literal>
+            <Literal>21 to 25</Literal>
+            <Literal>26 to 35</Literal>
+            <Literal>36 to 45</Literal>
+            <Literal>46 to 55</Literal>
+            <Literal>56 to 65</Literal>
+            <Literal>6 to 10</Literal>
+            <Literal>66 to 75</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#casualties_number"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gender"/>
+        <DataOneOf>
+            <Literal>Female</Literal>
+            <Literal>Male</Literal>
+            <Literal>Other</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#light_conditions"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#light_conditions"/>
+        <DataOneOf>
+            <Literal>Darkness lights lit</Literal>
+            <Literal>Darkness no lights</Literal>
+            <Literal>Daylight</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#road_conditions"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#road_conditions"/>
+        <DataOneOf>
+            <Literal>Dry</Literal>
+            <Literal>Snow</Literal>
+            <Literal>Wet</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#road_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#road_type"/>
+        <DataOneOf>
+            <Literal>Dual carriageway</Literal>
+            <Literal>Roundabout</Literal>
+            <Literal>Single carriageway</Literal>
+            <Literal>Unknown</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#speed_limit"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#time"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#vehicles_number"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weather_conditions"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weather_conditions"/>
+        <DataOneOf>
+            <Literal>Clear</Literal>
+            <Literal>Clear and Windy</Literal>
+            <Literal>Other</Literal>
+            <Literal>Rain</Literal>
+            <Literal>Rain and Windy</Literal>
+            <Literal>Snow</Literal>
+            <Literal>Snow and Windy</Literal>
+            <Literal>Unknown</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#week_day"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#week_day"/>
+        <DataOneOf>
+            <Literal>Friday</Literal>
+            <Literal>Monday</Literal>
+            <Literal>Saturday</Literal>
+            <Literal>Sunday</Literal>
+            <Literal>Thursday</Literal>
+            <Literal>Tuesday</Literal>
+            <Literal>Wednesday</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
