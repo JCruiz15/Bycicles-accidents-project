@@ -1,0 +1,777 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident"
+     xml:base="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bikers_accident="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#accident_related -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#accident_related">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#biker_affected"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#accident_severity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#accident_severity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#biker_affected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#biker_affected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#biker_injury -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#biker_injury">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_light -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_light">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_roadCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_roadCondition">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_roadType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_roadType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_speedLimit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_speedLimit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_weather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#conditions_weather">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#age_group -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#age_group">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>11 to 15</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>16 to 20</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>21 to 25</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>26 to 35</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>36 to 45</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>46 to 55</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>56 to 65</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>6 to 10</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>66 to 75</rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#casualties_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#casualties_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Female</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Male</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Other</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#vehicles_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#vehicles_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#week_day -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#week_day">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Friday</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Monday</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Saturday</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Sunday</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Thursday</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Tuesday</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Wednesday</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Conditions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roads -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roads">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <bikers_accident:accident_related rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#truck_biker_1"/>
+        <bikers_accident:biker_injury rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Serious"/>
+        <bikers_accident:age_group>26 to 35</bikers_accident:age_group>
+        <bikers_accident:gender>Male</bikers_accident:gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+        <bikers_accident:biker_injury rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Fatal"/>
+        <bikers_accident:age_group>11 to 15</bikers_accident:age_group>
+        <bikers_accident:gender>Female</bikers_accident:gender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear_windy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear_windy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_lights_lit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_lights_lit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_no_light -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_no_light">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Daylight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Daylight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Light"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dual_carriageway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dual_carriageway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Fatal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Fatal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Frost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Frost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain_windy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain_windy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roundabout -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roundabout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Serious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Serious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#SingleCarriageway_wet_30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#SingleCarriageway_wet_30"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#SingleCarriageway_wet_60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#SingleCarriageway_wet_60"/>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Single_carriageway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Single_carriageway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Slight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Slight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow_windy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow_windy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Weather_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Wet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Wet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Road_conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#car_biker_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#car_biker_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <bikers_accident:accident_severity rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Slight"/>
+        <bikers_accident:biker_affected rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_1"/>
+        <bikers_accident:conditions_light rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Daylight"/>
+        <bikers_accident:conditions_roadCondition rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Frost"/>
+        <bikers_accident:conditions_roadType rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Single_carriageway"/>
+        <bikers_accident:conditions_speedLimit rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#40km_h"/>
+        <bikers_accident:conditions_weather rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear_windy"/>
+        <bikers_accident:casualties_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bikers_accident:casualties_number>
+        <bikers_accident:date>1995-12-26</bikers_accident:date>
+        <bikers_accident:time>09:21</bikers_accident:time>
+        <bikers_accident:vehicles_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bikers_accident:vehicles_number>
+        <bikers_accident:week_day>Monday</bikers_accident:week_day>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#car_biker_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#car_biker_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <bikers_accident:accident_severity rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Fatal"/>
+        <bikers_accident:biker_affected rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_2"/>
+        <bikers_accident:conditions_light rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_no_light"/>
+        <bikers_accident:conditions_roadCondition rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Wet"/>
+        <bikers_accident:conditions_roadType rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roundabout"/>
+        <bikers_accident:conditions_speedLimit rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#30km_h"/>
+        <bikers_accident:conditions_weather rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain"/>
+        <bikers_accident:casualties_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bikers_accident:casualties_number>
+        <bikers_accident:date>1995-02-06</bikers_accident:date>
+        <bikers_accident:date>Wednesday</bikers_accident:date>
+        <bikers_accident:time>19:23</bikers_accident:time>
+        <bikers_accident:vehicles_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bikers_accident:vehicles_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#truck_biker_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#truck_biker_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+        <bikers_accident:accident_severity rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Serious"/>
+        <bikers_accident:biker_affected rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_1"/>
+        <bikers_accident:conditions_light rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Daylight"/>
+        <bikers_accident:conditions_roadCondition rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dry"/>
+        <bikers_accident:conditions_roadType rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Single_carriageway"/>
+        <bikers_accident:conditions_speedLimit rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#60km_h"/>
+        <bikers_accident:conditions_weather rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear_windy"/>
+        <bikers_accident:casualties_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bikers_accident:casualties_number>
+        <bikers_accident:date>1995-01-25</bikers_accident:date>
+        <bikers_accident:time>17:30</bikers_accident:time>
+        <bikers_accident:vehicles_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bikers_accident:vehicles_number>
+        <bikers_accident:week_day>Monday</bikers_accident:week_day>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#30km_h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#30km_h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#40km_h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#40km_h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#50km_h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#50km_h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#60km_h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#60km_h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#70km_h -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#70km_h">
+        <rdf:type rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Speed_limit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Accident"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Conditions"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Severity_Injuries"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Biker_2"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Clear_windy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain_windy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Snow_windy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_lights_lit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Darkness_no_light"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Daylight"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Frost"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Wet"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Dual_carriageway"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Roundabout"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Single_carriageway"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#30km_h"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#40km_h"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#50km_h"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#60km_h"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#70km_h"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
