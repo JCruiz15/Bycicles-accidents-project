@@ -633,9 +633,9 @@
         <bikers_accident:conditions_weather rdf:resource="http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#Rain"/>
         <bikers_accident:casualties_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</bikers_accident:casualties_number>
         <bikers_accident:date>1995-02-06</bikers_accident:date>
-        <bikers_accident:date>Wednesday</bikers_accident:date>
         <bikers_accident:time>19:23</bikers_accident:time>
         <bikers_accident:vehicles_number rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</bikers_accident:vehicles_number>
+        <bikers_accident:week_day>Wednesday</bikers_accident:week_day>
     </owl:NamedIndividual>
     
 
