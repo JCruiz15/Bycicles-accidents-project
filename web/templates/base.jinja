@@ -1,0 +1,85 @@
+{# This is a template that contains the navbar and footer #}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename='img/map_icon.svg')}}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    
+    {# Links and title inside the head tag #}
+    {% block head %} {% endblock %}
+</head>
+
+
+
+<body class="d-flex flex-column min-vh-100 bg">
+    <header>
+        <nav class="navbar navbar-expand navbar-light bg-light shadow justify-content-start">
+                <a class="m-2 logo" href="https://enbic2lab.uma.es/">
+                        <img class=logoNav src="{{url_for('static', filename='img/logo.svg')}}" alt="logo" title="logo">
+                </a>
+                <a class="d-sm-flex home-link text-decoration-none title mx-3">Fauna monitoring</a>
+                <a class="d-sm-flex home-link mx-3 text-right" href="/{{hash}}?token={{token}}">Home</a>
+
+                {# Buttons in the navbar #}
+                {% block nav_button %} {% endblock %}
+            </a>
+        </nav>
+    </header>
+    <main>
+    {# Main cotent of the view #}
+    {% block content %} {% endblock %}
+    </main>
+
+    <footer class="text-center text-lg-start bg-light text-muted fixed">
+        <!-- Section: Links  -->
+        <section class="" style="height: 100px">
+            <div class="container text-center text-md-start mt-0.1 align-items-center" style="height: 100%">
+                <!-- Grid row -->
+                <div class="row mt-3 align-items-center" style="height: 100%">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 align-items-center" style="height: 100%">
+                        <div class="text-center p-3"><a class="navbar-brand" href="#"><img src="../static/img/bike.png"
+                                    alt="Bootstrap" width="30" height="30"></a>
+                            <h6 class="display-9">© Ontología de accidentes</h6>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 align-items-center" style="height: 100%">
+                        <div class="text-center p-3 align-items-center" style="height: 100%; width: 220px"><a class="navbar-brand" href="https://www.uma.es/"><img src="../static/img/UMA.svg" alt="UMA"
+                                    width="40" height="60"></a> Universidad
+                            <h6 class="display-9"></h6>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 align-items-center" style="height: 100%">
+                        <!-- Links -->
+                        
+                        <p class="text-center p-4 align-items-center">
+                            <a class="navbar-brand" href="https://github.com/JCruiz15/Bycicles-accidents-project">
+                            <img src="../static/img/GitHub-Mark.svg" alt="Github" width="27"
+                            height="30"></a> Github
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05); height: 40px">
+            Universidad de Málaga - Estándares de datos - Ontología de Accidentes
+        </div>
+        <!-- Copyright -->
+    </footer>
+    {# Scripts #}
+    {% block scripts %}{% endblock %}
+</body>
+</html>

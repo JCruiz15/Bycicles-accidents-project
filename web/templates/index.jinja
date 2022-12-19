@@ -1,0 +1,157 @@
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
+
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
+
+<title>Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+
+{% block content%}
+
+{#
+Adds the main content:
+- Dropzone
+- Information about the web
+- Buttons for submitting the file and showing the map
+#}
+<div class="container-fluid text-white my-5">
+    <div class="container-sm row justify-content-between min-vw-100">
+        <fieldset class="col-md-6 mb-6">
+            <form method="POST" action="/upload" enctype="multipart/form-data"
+                class="row align-items-center justify-content-center">
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                    <input type="file" name="file" class="drop-zone__input">
+                </div>
+                <div class="button d-flex justify-content-center mt-4 ">
+                    <button type="submit" class="btn btn-outline-light mb-2 hover-img" id="upload">Upload</button>
+                </div>
+            </form>
+        </fieldset>
+        <fieldset class="col-md-6 mb-6">
+            <legend class="my-2 row align-items-center justify-content-center"">About</legend>
+                <div class=widthBoxes>
+                    <p>
+                        This a csv file visualization for vultures, and other birds, routes.
+                        In our app you will be able to submit your own files in csv format
+                        and choose which kind of map you would like to create, among
+                        several maps in 2D and 3D. Automatically
+                        the app will generate the map with your data in which you will watch
+                        simply your birds' movement.
+
+                        If you want to try the app just watch out the demos below.
+                    </p>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
+                            DEMO
+                        </button>
+                        <div class="dropdown-menu">
+                            <button type="submit" class="btn dropdown-item" id="2D-demo" formaction="/demo2d">
+                                2D map demo
+                            </button>
+                            <button type="submit" class="btn dropdown-item" id="3D-demo" formaction="/demo3d">
+                                3D map demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </legend>
+        </fieldset>
+        {# <fieldset class="fieldset-about col-md-4">
+            
+        </fieldset> #}
+    </div>
+    <form method="GET" class="mt-5">
+        <input type="hidden" name="token" id="token" value={{token}}>
+        <div class="container-sm row justify-content-between min-vw-100">
+            <fieldset class="col-md-6 mb-6">
+                <form class="row align-items-center justify-content-center">
+                    <legend class="my-2">2D Maps</legend>
+                    <div class="widthBoxes2 card bg-dark text-white text-center bg-opacity-70 border-0 shadow">
+                        <div class="card-body">
+                            <div class="button">
+                                <button type="submit" class="btn btn-outline-light mb-2 hover-img" id="2D-map"
+                                    formaction="/map2d/{{hash}}" {% if disable %} disabled {% endif %}>Map with
+                                    route</button>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn btn-outline-light mb-2" id="2D-heatmap"
+                                    formaction="/heatmap2d/{{hash}}" {% if disable %} disabled {% endif %}>Heatmap</button>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown"
+                                    {% if disable %} disabled {% endif %}>
+                                    Heatmap in time
+                                </button>
+                                <div class="dropdown-menu">
+                                    <button type="submit" class="btn dropdown-item" id="2D-heatmap-day"
+                                        formaction="/heatmapday2d/{{hash}}">
+                                        By days
+                                    </button>
+                                    <button type="submit" class="btn dropdown-item" id="2D-heatmap-month"
+                                        formaction="/heatmapmonth2d/{{hash}}">
+                                        By months
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+
+            <fieldset class="col-md-6 mb-6">
+                <legend class="my-2">3D Maps</legend>
+                <br>
+                <div class="card bg-dark text-black text-center bg-opacity-70 border-0 shadow widthBoxes3   ">
+                    <div class="card-body">
+                        <div class="button">
+                            <button type="submit" class="btn btn-outline-light mb-2" id="3D-map"
+                                formaction="/map3d/{{hash}}" {% if disable %} disabled {% endif %}>Map with route
+                                and height</button>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn btn-outline-light" id="3D-heatmap-gif"
+                                formaction="/movement3d/{{hash}}" {% if disable %} disabled {% endif %}>Path in
+                                movement</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        {# Message alert #}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <script>
+            Swal.fire({
+                title: "{{ category.title() }}!",
+                // success , error , warning , info
+                text: "{{ message }}",
+                // Custom message flashed from your flask routes
+                icon: "{{ category }}" == "danger" ? "error" : "{{ category }}"
+                // success , error , warning , info
+            })
+        </script>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Adds the scripts and dependencies #}
+<script src="{{url_for('static',filename='js/script_dragdrop.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+{% endblock %}
+</body>
+
+</html>
