@@ -57,11 +57,9 @@
                                                 </xs:restriction>
                                             </xs:simpleType>
                                         </xs:element>
-
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                                                        
                         </xs:sequence>
                         <xs:attribute name="Accident_Index" type="xs:string"></xs:attribute>
                     </xs:complexType>

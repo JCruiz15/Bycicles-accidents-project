@@ -1,0 +1,13 @@
+PREFIX schema: <http://schema.org/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX bikers_accident: <http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#>
+
+
+SELECT ?accident ?day
+WHERE {
+	?accident rdf:type bikers_accident:Accident .
+    ?accident bikers_accident:week_day ?day .
+    FILTER(?day = "Monday") .
+}

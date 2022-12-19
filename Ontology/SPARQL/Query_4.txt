@@ -1,0 +1,14 @@
+PREFIX schema: <http://schema.org/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX bikers_accident: <http://www.semanticweb.org/estandares_integreacion_datos/ontologies/2022/10/bikers_accident#>
+
+SELECT ?injury ?weather ?n_vehicules (COUNT(?n_vehicules) as ?number_of_accidents)
+WHERE {
+	?accident rdf:type bikers_accident:Accident .
+    ?accident bikers_accident:accident_severity ?injury .
+    ?accident bikers_accident:vehicles_number ?n_vehicules .
+    ?accident bikers_accident:conditions_weather ?weather
+}
+GROUP BY ?injury ?n_vehicules ?weather
