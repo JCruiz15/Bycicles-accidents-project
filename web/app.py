@@ -52,6 +52,10 @@ def xml_html_result():
 def xqueries():
     return render_template("xqueries.jinja")
 
+@app.route("/XML/Xqueries-resultado", methods=['GET', 'POST'])
+def xqueries_result():
+    return render_template("xquery_result.jinja")
+
 if __name__ == "__main__":
     # app.run(debug=True)
     app.run(port=5000, debug=True)

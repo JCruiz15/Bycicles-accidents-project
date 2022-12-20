@@ -1,0 +1,70 @@
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
+
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
+
+<title>Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+
+{% block content%}
+
+{#
+Adds the main content:
+- Dropzone
+- Information about the web
+- Buttons for submitting the file and showing the map
+#}
+<div class="container-fluid text-white my-5 text-center">
+<textarea class="contenedor" cols="250" rows="25" style="border: transparent; background-color: rgb(40,40,40); color: azure;"><results>
+    <day>Wednesday</day>
+    <n_accidents>19</n_accidents>
+</results>
+
+<results>
+    <day>Thursday</day>
+    <n_accidents>16</n_accidents>
+</results>
+
+<results>
+    <day>Tuesday</day>
+    <n_accidents>17</n_accidents>
+</results>
+
+<results>
+    <day>Sunday</day>
+    <n_accidents>11</n_accidents>
+</results>
+
+<results>
+    <day>Friday</day>
+    <n_accidents>13</n_accidents>
+</results>
+
+<results>
+    <day>Monday</day>
+    <n_accidents>19</n_accidents>
+</results>
+
+<results>
+    <day>Saturday</day>
+    <n_accidents>12</n_accidents>
+</results>
+</textarea>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Adds the scripts and dependencies #}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+{% endblock %}
+</body>
+
+</html>
