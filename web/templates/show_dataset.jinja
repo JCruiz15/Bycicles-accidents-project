@@ -1,0 +1,77 @@
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
+
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
+
+<title>Dataset - Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+
+{% block content%}
+    
+<div class="container-fluid my-5 text-white text-center">
+    <h1>Dataset de partida</h1>
+    <hr>
+    <br>
+    <table class="table table-hover table-dark mx-auto" style="width: 85%;">
+      <thead class="thead-dark">
+        <tr style="font-size: large;">
+          <th scope="col">ID</th>
+          <th scope="col">Nº vehiculos</th>
+          <th scope="col">Nº afectados</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Hora</th>
+          <th scope="col">Día semana</th>
+          <th scope="col">Límite de velocidad</th>
+          <th scope="col">Condiciones de la carretera</th>
+          <th scope="col">Tipo de carretera</th>
+          <th scope="col">Condiciones atmosféricas</th>
+          <th scope="col">Condiciones lumínicas</th>
+          <th scope="col">Género del ciclista</th>
+          <th scope="col">Gravedad</th>
+          <th scope="col">Grupo de edad</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+            {% for key,value in dataset.iterrows() %}
+            <tr>
+                <td>{{value['Accident_Index']}}</td>
+                <td>{{value['Number_of_Vehicles']}}</td>
+                <td>{{value['Number_of_Casualties']}}</td>
+                <td>{{value['Date']}}</td>
+                <td>{{value['Time']}}</td>
+                <td>{{value['Day']}}</td>
+                <td>{{value['Speed_limit']}}</td>
+                <td>{{value['Road_conditions']}}</td>
+                <td>{{value['Road_type']}}</td>
+                <td>{{value['Weather_conditions']}}</td>
+                <td>{{value['Light_conditions']}}</td>
+                <td>{{value['biker_gender']}}</td>
+                <td>{{value['biker_severity_injury']}}</td>
+                <td>{{value['biker_age_group']}}</td>
+            </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+    <p style="font-size: smaller;">
+        NOTA: Los títulos se encuentran traducidos al español para una mejor comprensión del contenido.
+    </p>
+  </div>
+</div>
+    
+{% endblock %}
+
+{% block scripts %}
+{# Adds the scripts and dependencies #}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+{% endblock %}
+</body>
+
+</html>

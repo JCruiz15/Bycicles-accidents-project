@@ -1,0 +1,2072 @@
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
+
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
+
+<title>Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+
+{% block content%}
+
+{#
+Adds the main content:
+- Dropzone
+- Information about the web
+- Buttons for submitting the file and showing the map
+#}
+<div class="container-fluid text-white my-5 text-center">
+<textarea class="contenedor" cols="250" rows="25" style="border: transparent; background-color: rgb(40,40,40); color: azure;"><?xml version="1.0" encoding="UTF-8"?>
+<Accidentes>
+    <Accidente ID="19954100C0101">
+        <Detalles>
+            <Fecha>Monday - 1995-01-16 - 12:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0035">
+        <Detalles>
+            <Fecha>Thursday - 1995-01-19 - 08:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>56 to 65</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0048">
+        <Detalles>
+            <Fecha>Saturday - 1995-01-21 - 11:38</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain and windy</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0057">
+        <Detalles>
+            <Fecha>Sunday - 1995-01-22 - 09:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Unknown</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0043">
+        <Detalles>
+            <Fecha>Tuesday - 1995-01-24 - 06:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>50.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0030">
+        <Detalles>
+            <Fecha>Wednesday - 1995-01-25 - 22:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear and windy</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0031">
+        <Detalles>
+            <Fecha>Thursday - 1995-01-26 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear and windy</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0067">
+        <Detalles>
+            <Fecha>Saturday - 1995-01-28 - 20:25</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0058">
+        <Detalles>
+            <Fecha>Thursday - 1995-02-03 - 12:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0281">
+        <Detalles>
+            <Fecha>Tuesday - 1995-02-05 - 08:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0136">
+        <Detalles>
+            <Fecha>Friday - 1995-02-06 - 14:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0465">
+        <Detalles>
+            <Fecha>Wednesday - 1995-02-08 - 19:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0469">
+        <Detalles>
+            <Fecha>Wednesday - 1995-02-08 - 17:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0124">
+        <Detalles>
+            <Fecha>Thursday - 1995-02-16 - 18:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Other</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0050">
+        <Detalles>
+            <Fecha>Tuesday - 1995-02-21 - 11:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0056">
+        <Detalles>
+            <Fecha>Wednesday - 1995-02-22 - 19:10</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Snow and windy</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0136">
+        <Detalles>
+            <Fecha>Friday - 1995-02-24 - 12:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0081">
+        <Detalles>
+            <Fecha>Friday - 1995-03-02 - 07:47</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>70.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0222">
+        <Detalles>
+            <Fecha>Monday - 1995-03-04 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0285">
+        <Detalles>
+            <Fecha>Monday - 1995-03-04 - 17:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0286">
+        <Detalles>
+            <Fecha>Wednesday - 1995-03-05 - 17:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0526">
+        <Detalles>
+            <Fecha>Sunday - 1995-03-09 - 11:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0184">
+        <Detalles>
+            <Fecha>Wednesday - 1995-03-15 - 10:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0083">
+        <Detalles>
+            <Fecha>Thursday - 1995-03-23 - 16:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0216">
+        <Detalles>
+            <Fecha>Thursday - 1995-03-23 - 16:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0221">
+        <Detalles>
+            <Fecha>Tuesday - 1995-03-28 - 21:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0080">
+        <Detalles>
+            <Fecha>Saturday - 1995-04-02 - 14:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0093">
+        <Detalles>
+            <Fecha>Saturday - 1995-04-02 - 12:30</Fecha>
+            <Vehiculos_involucrados>3</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>40.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Other</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0262">
+        <Detalles>
+            <Fecha>Wednesday - 1995-04-10 - 09:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>66 to 75</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0343">
+        <Detalles>
+            <Fecha>Monday - 1995-04-12 - 07:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Unknown</Clima>
+            <Luminosidad>Darkness no lights</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0098">
+        <Detalles>
+            <Fecha>Sunday - 1995-04-16 - 09:55</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>40.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0243">
+        <Detalles>
+            <Fecha>Monday - 1995-04-17 - 14:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0099">
+        <Detalles>
+            <Fecha>Wednesday - 1995-04-19 - 08:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0250">
+        <Detalles>
+            <Fecha>Thursday - 1995-04-20 - 12:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0256">
+        <Detalles>
+            <Fecha>Friday - 1995-04-21 - 15:09</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0103">
+        <Detalles>
+            <Fecha>Sunday - 1995-04-23 - 17:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0264">
+        <Detalles>
+            <Fecha>Monday - 1995-04-24 - 16:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0060">
+        <Detalles>
+            <Fecha>Sunday - 1995-05-03 - 13:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0229">
+        <Detalles>
+            <Fecha>Wednesday - 1995-05-04 - 08:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0294">
+        <Detalles>
+            <Fecha>Friday - 1995-05-05 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0355">
+        <Detalles>
+            <Fecha>Monday - 1995-05-06 - 17:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0367">
+        <Detalles>
+            <Fecha>Monday - 1995-05-06 - 16:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0229">
+        <Detalles>
+            <Fecha>Tuesday - 1995-05-09 - 12:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>50.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0257">
+        <Detalles>
+            <Fecha>Thursday - 1995-05-10 - 08:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>40.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0295">
+        <Detalles>
+            <Fecha>Sunday - 1995-05-11 - 14:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0316">
+        <Detalles>
+            <Fecha>Tuesday - 1995-05-16 - 09:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0123">
+        <Detalles>
+            <Fecha>Wednesday - 1995-05-17 - 09:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0336">
+        <Detalles>
+            <Fecha>Friday - 1995-05-26 - 17:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0089">
+        <Detalles>
+            <Fecha>Monday - 1995-06-02 - 08:10</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0091">
+        <Detalles>
+            <Fecha>Monday - 1995-06-02 - 20:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0359">
+        <Detalles>
+            <Fecha>Tuesday - 1995-06-13 - 16:35</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>4</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0153">
+        <Detalles>
+            <Fecha>Wednesday - 1995-06-14 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0150">
+        <Detalles>
+            <Fecha>Friday - 1995-06-16 - 19:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0380">
+        <Detalles>
+            <Fecha>Tuesday - 1995-06-20 - 09:33</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0160">
+        <Detalles>
+            <Fecha>Thursday - 1995-06-22 - 19:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>70.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0397">
+        <Detalles>
+            <Fecha>Tuesday - 1995-06-27 - 10:21</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0163">
+        <Detalles>
+            <Fecha>Friday - 1995-06-30 - 18:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0232">
+        <Detalles>
+            <Fecha>Thursday - 1995-07-09 - 17:38</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>40.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0238">
+        <Detalles>
+            <Fecha>Thursday - 1995-07-09 - 07:25</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Unknown</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0427">
+        <Detalles>
+            <Fecha>Sunday - 1995-07-16 - 15:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0184">
+        <Detalles>
+            <Fecha>Monday - 1995-07-17 - 17:45</Fecha>
+            <Vehiculos_involucrados>1</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0433">
+        <Detalles>
+            <Fecha>Wednesday - 1995-07-19 - 08:25</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0188">
+        <Detalles>
+            <Fecha>Saturday - 1995-07-22 - 19:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>70.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0194">
+        <Detalles>
+            <Fecha>Tuesday - 1995-07-25 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0463">
+        <Detalles>
+            <Fecha>Saturday - 1995-07-29 - 14:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0198">
+        <Detalles>
+            <Fecha>Sunday - 1995-07-30 - 20:26</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Unknown</Tipo_Via>
+            <Limite_Velocidad>70.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0161">
+        <Detalles>
+            <Fecha>Wednesday - 1995-08-03 - 16:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Unknown</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0207">
+        <Detalles>
+            <Fecha>Tuesday - 1995-08-08 - 08:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0537">
+        <Detalles>
+            <Fecha>Friday - 1995-08-09 - 06:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0480">
+        <Detalles>
+            <Fecha>Monday - 1995-08-14 - 07:08</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>56 to 65</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0487">
+        <Detalles>
+            <Fecha>Monday - 1995-08-14 - 19:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0493">
+        <Detalles>
+            <Fecha>Thursday - 1995-08-17 - 12:30</Fecha>
+            <Vehiculos_involucrados>3</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0216">
+        <Detalles>
+            <Fecha>Tuesday - 1995-08-22 - 15:55</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0503">
+        <Detalles>
+            <Fecha>Wednesday - 1995-08-23 - 13:49</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0542">
+        <Detalles>
+            <Fecha>Wednesday - 1995-08-23 - 16:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0222">
+        <Detalles>
+            <Fecha>Thursday - 1995-08-24 - 15:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0499">
+        <Detalles>
+            <Fecha>Thursday - 1995-08-24 - 12:24</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0220">
+        <Detalles>
+            <Fecha>Friday - 1995-08-25 - 16:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0539">
+        <Detalles>
+            <Fecha>Saturday - 1995-09-09 - 16:39</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0540">
+        <Detalles>
+            <Fecha>Saturday - 1995-09-09 - 12:25</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0269">
+        <Detalles>
+            <Fecha>Monday - 1995-09-10 - 16:55</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0558">
+        <Detalles>
+            <Fecha>Wednesday - 1995-09-13 - 15:31</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0248">
+        <Detalles>
+            <Fecha>Monday - 1995-09-18 - 18:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0249">
+        <Detalles>
+            <Fecha>Friday - 1995-09-22 - 08:40</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0579">
+        <Detalles>
+            <Fecha>Tuesday - 1995-09-26 - 14:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0277">
+        <Detalles>
+            <Fecha>Thursday - 1995-09-28 - 13:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0253">
+        <Detalles>
+            <Fecha>Friday - 1995-09-29 - 07:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0306">
+        <Detalles>
+            <Fecha>Wednesday - 1995-10-05 - 17:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0357">
+        <Detalles>
+            <Fecha>Saturday - 1995-10-06 - 12:55</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Unknown</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0361">
+        <Detalles>
+            <Fecha>Saturday - 1995-10-06 - 15:52</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0422">
+        <Detalles>
+            <Fecha>Monday - 1995-10-07 - 17:00</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>6 to 10</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0481">
+        <Detalles>
+            <Fecha>Thursday - 1995-10-08 - 11:50</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0285">
+        <Detalles>
+            <Fecha>Monday - 1995-10-23 - 10:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0284">
+        <Detalles>
+            <Fecha>Tuesday - 1995-10-24 - 19:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear and windy</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>11 to 15</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0097">
+        <Detalles>
+            <Fecha>Tuesday - 1995-11-04 - 17:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0358">
+        <Detalles>
+            <Fecha>Sunday - 1995-11-06 - 12:43</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>56 to 65</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0484">
+        <Detalles>
+            <Fecha>Friday - 1995-11-08 - 07:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>16 to 20</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0304">
+        <Detalles>
+            <Fecha>Saturday - 1995-11-11 - 13:15</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0322">
+        <Detalles>
+            <Fecha>Monday - 1995-11-13 - 09:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Unknown</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0319">
+        <Detalles>
+            <Fecha>Saturday - 1995-11-18 - 18:43</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>40.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0065">
+        <Detalles>
+            <Fecha>Sunday - 1995-12-03 - 20:25</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>2</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>70.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Darkness no lights</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>56 to 65</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0069">
+        <Detalles>
+            <Fecha>Sunday - 1995-12-03 - 11:05</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>60.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>26 to 35</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0234">
+        <Detalles>
+            <Fecha>Wednesday - 1995-12-04 - 07:45</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>46 to 55</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0146">
+        <Detalles>
+            <Fecha>Monday - 1995-12-06 - 18:20</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100C0549">
+        <Detalles>
+            <Fecha>Tuesday - 1995-12-09 - 16:10</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Roundabout</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Daylight</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0353">
+        <Detalles>
+            <Fecha>Wednesday - 1995-12-13 - 17:10</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Dual carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Clear</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Female</Genero>
+            <Edad>21 to 25</Edad>
+            <Grado_Lesion>Slight</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+    <Accidente ID="19954100B0360">
+        <Detalles>
+            <Fecha>Tuesday - 1995-12-19 - 22:30</Fecha>
+            <Vehiculos_involucrados>2</Vehiculos_involucrados>
+            <Damnificados>1</Damnificados>
+        </Detalles>
+        <Condiciones>
+            <Tipo_Via>Single carriageway</Tipo_Via>
+            <Limite_Velocidad>30.0</Limite_Velocidad>
+            <Via_Estado/>
+            <Clima>Rain and windy</Clima>
+            <Luminosidad>Darkness lights lit</Luminosidad>
+        </Condiciones>
+        <Ciclista>
+            <Genero>Male</Genero>
+            <Edad>36 to 45</Edad>
+            <Grado_Lesion>Serious</Grado_Lesion>
+        </Ciclista>
+    </Accidente>
+</Accidentes>
+</textarea>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Adds the scripts and dependencies #}
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+{% endblock %}
+</body>
+
+</html>

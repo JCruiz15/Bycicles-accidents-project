@@ -1,0 +1,74 @@
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
+
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
+
+<title>Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+
+{% block content%}
+
+{#
+Adds the main content:
+- Dropzone
+- Information about the web
+- Buttons for submitting the file and showing the map
+#}
+<div class="container-fluid text-white my-5">
+    <div class="container-sm row justify-content-between min-vw-100">
+        <fieldset class="col-md-6 mb-6" style="height:500px">
+        <div class="contenedor text-center" style="width=700px; height:100%; overflow:scroll">
+            <a class="navbar-brand">
+                <img src="../static/img/codeXSLT1.png" alt="bike_accident" style="border-radius: 3px; width:800px;">
+            </a>
+        </div>
+        </fieldset>
+
+        <fieldset class="col-md-6 mb-6">
+            <legend class="my-2 row align-items-center justify-content-center">Transformación XML a XML</legend>
+            <div class="widthBoxes">
+                <p>
+                    Con esta transformación buscamos traducir los atributos y etiquetas, que originalmente, esta-
+                    ban en inglés. También hemos hecho unos pequeños cambios en la estructura, la fecha ahora
+                    está unida en una sola etiqueta cuando antes estaba dividida en tres. A su vez hemos creado la
+                    etiqueta "Detalles" para agrupar "Fecha", "Vehículos involucrados" y "Damnificados" dentro de
+                    ella
+                </p>
+                <div>
+                    <a class="custom-btn btn-5 text-center" href="/XML/xml-xml-resultado" style="text-decoration: none;">Ver resultado</a>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <div class="row col-md-12 px-3 justify-content-center align-text-center" style="padding-top: 100px;">
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/XML'">Volver Atrás</button>
+            </div>
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/XML/xml-html'">XML a HTML</button>
+            </div>
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/XML/Xqueries'">XQueries</button>
+            </div>
+        </div>
+
+    
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Adds the scripts and dependencies #}
+<script src="{{url_for('static',filename='js/script_dragdrop.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+{% endblock %}
+</body>
+
+</html>
