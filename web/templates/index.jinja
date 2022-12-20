@@ -19,50 +19,48 @@ Adds the main content:
 <div class="container-fluid text-white my-5">
     <div class="container-sm row justify-content-between min-vw-100">
         <fieldset class="col-md-6 mb-6">
-            <form method="POST" action="/upload" enctype="multipart/form-data"
-                class="row align-items-center justify-content-center">
-                <div class="drop-zone">
-                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                    <input type="file" name="file" class="drop-zone__input">
-                </div>
-                <div class="button d-flex justify-content-center mt-4 ">
-                    <button type="submit" class="btn btn-outline-light mb-2 hover-img" id="upload">Upload</button>
-                </div>
-            </form>
+        <div class="text-center">
+            <a class="navbar-brand" href="https://www.uma.es/">
+                <img src="../static/img/bike_acc.jpg" alt="bike_accident">
+            </a>
+        </div>
         </fieldset>
-        <fieldset class="col-md-6 mb-6">
-            <legend class="my-2 row align-items-center justify-content-center"">About</legend>
-                <div class=widthBoxes>
-                    <p>
-                        This a csv file visualization for vultures, and other birds, routes.
-                        In our app you will be able to submit your own files in csv format
-                        and choose which kind of map you would like to create, among
-                        several maps in 2D and 3D. Automatically
-                        the app will generate the map with your data in which you will watch
-                        simply your birds' movement.
 
-                        If you want to try the app just watch out the demos below.
-                    </p>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown">
-                            DEMO
-                        </button>
-                        <div class="dropdown-menu">
-                            <button type="submit" class="btn dropdown-item" id="2D-demo" formaction="/demo2d">
-                                2D map demo
-                            </button>
-                            <button type="submit" class="btn dropdown-item" id="3D-demo" formaction="/demo3d">
-                                3D map demo
-                            </button>
-                        </div>
-                    </div>
+        <fieldset class="col-md-6 mb-6">
+            <legend class="my-2 row align-items-center justify-content-center">Acerca del proyecto</legend>
+            <div class="widthBoxes">
+                <p>
+                    This a csv file visualization for vultures, and other birds, routes.
+                    In our app you will be able to submit your own files in csv format
+                    and choose which kind of map you would like to create, among
+                    several maps in 2D and 3D. Automatically
+                    the app will generate the map with your data in which you will watch
+                    simply your birds' movement.
+
+                    If you want to try the app just watch out the demos below.
+                </p>
+                <div>
+                    <a class="custom-btn btn-5 text-center" href="/table">Ver datos</a>
                 </div>
-            </legend>
+            </div>
         </fieldset>
-        {# <fieldset class="fieldset-about col-md-4">
-            
-        </fieldset> #}
-    </div>
+
+
+        <div class="row col-md-12 px-3 justify-content-center align-text-center" style="padding-top: 100px;">
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5">XML a XML</button>
+            </div>
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5">XML a HTML</button>
+            </div>
+            <div class="col col-lg-2 mx-4 text-center">
+                <button type="button" class="custom-btn btn-5">XQueries</button>
+            </div>
+            <div class="col col-lg-2 mx-4 text-center">
+                    <button type="button" class="custom-btn btn-5">SPARQL</button>
+            </div>
+        </div>
+
     <form method="GET" class="mt-5">
         <input type="hidden" name="token" id="token" value={{token}}>
         <div class="container-sm row justify-content-between min-vw-100">

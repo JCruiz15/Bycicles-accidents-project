@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{url_for('static', filename='img/map_icon.svg')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/img/bike.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
@@ -19,12 +19,15 @@
 
 <body class="d-flex flex-column min-vh-100 bg">
     <header>
-        <nav class="navbar navbar-expand navbar-light bg-light shadow justify-content-start">
-                <a class="m-2 logo" href="https://enbic2lab.uma.es/">
-                        <img class=logoNav src="{{url_for('static', filename='img/logo.svg')}}" alt="logo" title="logo">
-                </a>
-                <a class="d-sm-flex home-link text-decoration-none title mx-3">Fauna monitoring</a>
-                <a class="d-sm-flex home-link mx-3 text-right" href="/{{hash}}?token={{token}}">Home</a>
+        <nav class="navbar navbar-expand navbar-light bg-light shadow justify-content-left" style="padding-left: 15px;">
+                <img class=logoNav src="../static/img/bike.png" alt="logo" title="logo" width="20" height="20">
+                <div class="row">
+                    <a class="d-sm-flex home-link title mx-4">Accidentes de bicicletas en Reino Unido</a>
+                    {#<a class="d-sm-flex home-link title mx-4">en Reino Unido</a>#}
+                </div>
+                <div>
+                </div>
+                <a class="d-md-flex home-link mx-3 title text-left" href="/">Home</a>
 
                 {# Buttons in the navbar #}
                 {% block nav_button %} {% endblock %}
