@@ -14,6 +14,7 @@ APP_SECRET_KEY = default=uuid.uuid4().hex
 app = Flask(__name__)
 app.config['SECRET_KEY'] = APP_SECRET_KEY
 
+
 @app.route("/", methods=['GET', 'POST'])
 def index():
     return render_template("index.jinja")
@@ -46,6 +47,10 @@ def xml_html():
 def xml_html_result():
     return render_template("bycicle_accidents.jinja")
 
+
+@app.route("/XML/Xqueries", methods=['GET', 'POST'])
+def xqueries():
+    return render_template("xqueries.jinja")
 
 if __name__ == "__main__":
     # app.run(debug=True)
