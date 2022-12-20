@@ -1,38 +1,30 @@
-<!DOCTYPE HTML><html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <title>Accidentes</title>
-      <style>
+{# Makes use of base.jinja #}
+{% extends 'base.jinja' %}
 
-                     html, body {
-                        height: 100%;
-                      }
-                      div{
-                        padding-right: 15px;
-                        padding-left: 15px;
-                        padding-bottom: 30px;
+{% block head %}
+{# Adds the title, stylesheet links and favicon #}
 
-                    }
-                    th{text-align: center;}
+<title>Accidentes en bicicleta</title>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
 
-                      #tableContainer-1 {
-                        height: 100%;
-                        width: 80%;
-                        display: table;
-                      }
-                      #tableContainer-2 {
-                        vertical-align: middle;
-                        display: table-cell;
-                        height: 100%;
-                      }
-                </style>
-   </head>
+{% block content%}
+
    <body>
-      <div class="tableContainer-1">
-         <div class="tableContainer-2">
-            <h1 class="text-center">Accidentes de bicicletas en Reino Unido</h1>
-            <table class="table table-bordered table-striped table-responsive mx-10px">
+   <div class="main container-fluid text-white my-5">
+
+      <div class="text-center">
+         <div class="row" style="height: 100%; width:auto;">
+            <div class="row col-md-12 px-3">
+               <div class="col-sm-8">
+                  <h1 class="text-center" style="padding-top: 10px; padding-bottom:30px; color:black">Accidentes de bicicletas en Reino Unido</h1>
+               </div>
+               <div class="col-sm-4" style="padding-top: 10px;">
+                  <button type="button" class="custom-btn btn-5" onclick="location.href='/xml-html'">Volver Atrás </button>
+               </div>
+            </div>
+         </div>
+            <table class="table table-dark table-bordered table-striped table-responsive table-sortable">
                <thead>
                   <tr>
                      <th scope="col">#</th>
@@ -1873,7 +1865,62 @@
                      <td>Serious</td>
                   </tr>
                </tbody>
-            </table><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></div>
+            </table>
+         </div>
       </div>
+   </div>
+      {% endblock %}
+      {% block scripts %}
+      {# Adds the scripts and dependencies #}
+      <script>
+            function sortTableByColumn(table, column, asc = true){
+            const dirModifier = asc ? 1 : -1;
+            const tBody = table.tBodies[0];
+            const rows = Array.from(tBody.querySelectorAll("tr"));
+
+            // Sort rows
+
+            const sortedRows = rows.sort((a, b) => {
+               const aColText = a.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
+               const bColText = b.querySelector(`td:nth-child(${ column + 1})`).textContent.trim();
+
+               return aColText > bColText ? (1 * dirModifier) : (-1 * dirModifier);
+            });
+
+            console.log(sortedRows);
+
+            // Eliminar todas las filas hasta que quede 1
+            while (tBody.firstChild){
+               tBody.removeChild(tBody.firstChild);
+            }
+
+            // Reinsertar filas, ahora ordenadas
+            tBody.append(...sortedRows);
+
+            // 
+            table.querySelectorAll("th").forEach(th => th.classList.remove("th-sort-asc","th-sort-desc"));
+            table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle(`th-sort-asc`, asc)
+            table.querySelector(`th:nth-child(${ column + 1})`).classList.toggle(`th-sort-desc`, !asc)
+
+         }
+
+
+         document.querySelectorAll(".table-sortable th").forEach(headerCell => {
+            headerCell.addEventListener("click", () => {
+               const tableElement = headerCell.parentElement.parentElement.parentElement;
+               const headerIndex = Array.prototype.indexOf.call(headerCell.parentElement.children, headerCell);
+               const currentIsAscending = headerCell.classList.contains("th-sort-asc");
+               
+               sortTableByColumn(tableElement, headerIndex, !currentIsAscending);
+            });
+         });
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+         </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+         </script>
+      {% endblock %}
    </body>
 </html>

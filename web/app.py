@@ -31,7 +31,7 @@ def xml_html():
 
 @app.route("/xml-html/resultado", methods=['GET', 'POST'])
 def xml_html_result():
-    return render_template("bycicle_accidents.html")
+    return render_template("bycicle_accidents.jinja")
 
 
 if __name__ == "__main__":
