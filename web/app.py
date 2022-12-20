@@ -28,9 +28,9 @@ def xml_xml():
     return render_template("xml-xml.jinja")
 
     
-@app.route("/XML/xml-html/resultado", methods=['GET', 'POST'])
-def xml_html_result():
-    return render_template("")
+@app.route("/XML/xml-xml-resultado", methods=['GET', 'POST'])
+def xml_xml_result():
+    return render_template("xml-xml_result.jinja")
 
 
 @app.route("/XML/xml-html", methods=['GET', 'POST'])
