@@ -21,14 +21,15 @@ def index():
 
 @app.route("/dataset", methods=['GET', 'POST'])
 def dataset():
-    dta = pd.read_csv("Bycicles-accidents-project/dataset/final_dataset_100samples.csv", sep=";", decimal=".")
+    dta = pd.read_csv("./dataset/final_dataset_100samples.csv", sep=";", decimal=".")
     print(dta.to_string())
     return render_template("show_dataset.jinja", dataset=dta)
+    
 
 
 @app.route("/xslt1", methods=['GET', 'POST'])
 def xslt1():
-    return render_template("index.jinja")
+    return render_template("xslt1.jinja")
 
 
 @app.route("/xslt2", methods=['GET', 'POST'])
