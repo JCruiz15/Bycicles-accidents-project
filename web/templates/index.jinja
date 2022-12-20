@@ -4,57 +4,68 @@
 {% block head %}
 {# Adds the title, stylesheet links and favicon #}
 
-<title>Accidentes en bicicleta</title>
+<title>Accidentes de Bicicleta</title>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 {% endblock %}
 
+
+
+
 {% block content%}
-
-{#
-Adds the main content:
-- Dropzone
-- Information about the web
-- Buttons for submitting the file and showing the map
-#}
-<div class="main container-fluid text-white my-5">
-    <div class="container-sm row justify-content-between min-vw-100">
-        <fieldset class="col-md-6 mb-6">
-        <div class="text-center">
-            <a class="navbar-brand">
-                <img src="../static/img/bike_acc.jpg" alt="bike_accident" style="border-radius: 3px;">
-            </a>
-        </div>
-        </fieldset>
-
-        <fieldset class="col-md-6 mb-6">
-            <legend class="my-2 row align-items-center justify-content-center">Acerca del proyecto</legend>
-            <div class="widthBoxes">
+<div class="container-fluid text-white my-5 mx-auto">
+    <div class="row justify-content-between">
+        <fieldset class="col-xl-6 mb-6 px-5">
+            <legend class="my-2 mx-3 row align-items-center justify-content-center">Accidentes en Bicicleta</legend>
+            <div class=widthBoxes>
                 <p>
-                    This a csv file visualization for vultures, and other birds, routes.
-                    In our app you will be able to submit your own files in csv format
-                    and choose which kind of map you would like to create, among
-                    several maps in 2D and 3D. Automatically
-                    the app will generate the map with your data in which you will watch
-                    simply your birds' movement.
+                    Web ilustrativa del proyecto de la asignatura Estándares de Datos y Algoritmos del grado Ing. de la Salud.
+                    En ella mostraremos nuestro proceso a lo largo de la asignatura a través de un conjunto de datos que hemos seleccionado.
+                    Esto constará de dos partes diferenciadas: una primera parte en la que se tratarán los conceptos de XML, XSLT y Xquery; 
+                    y una segunda parte en la que usaremos OWL, RDF y SPARQL.<br><br>
 
-                    If you want to try the app just watch out the demos below.
+                    En la primera parte realizaremos varias transformaciones XSLT de XML a HTML y de XML a XML que mostraremos, además
+                    utilizaremos Xqueries para obtener datos concretos de nuestro XML y mostrarlos<br>
+
+                    En la segunda parte, nos centraremos en la creación de una ontología con Protégé a la que también le realizaremos consultas
+                    SPARQL para obtener datos concretos.<br><br>
+                    Podrás acceder a cualquiera de estos datos haciendo click en el botón de la cabecera que desees.
                 </p>
             </div>
         </fieldset>
-
+        <fieldset class="col-xl-5 mb-6 my-auto mx-auto">
+            <img class="rounded mx-auto my-auto shadow-lg" src="{{url_for('static', filename='img/bycicle-index.jpg')}}" alt="bici montada" title="Un señor de mediana edad, probablemente francés, monta en bicicleta por una calle poco transitada de un barrio residencial. Se encuentra feliz con su vida y su trabajo, pero suele ir a montar en bicicleta para escapar unas horas de casa y no aguantar a sus molestos hijos" height=410 width=600>
+        </fieldset>
+    </div>
+    
+    <div class="row justify-content-between mt-5">
+        <fieldset class="col-xl-5 mb-6 my-auto mx-auto">
+            <img class="rounded mx-auto my-auto shadow-lg" src="{{url_for('static', filename='img/crash-road-bike-index.jpg')}}" alt="caida" title="Un señor que se ha caído de la bicicleta de una forma completamente casual, se encuentra quejándose de dolores en su rodilla derecha" height=400 width=600>
+        </fieldset>
+        <fieldset class="col-xl-6 mb-6 px-5">
+            <legend class="my-2 mx-3 row align-items-center justify-content-center">Uso de la aplicación</legend>
+            <div class="widthBoxes">
+                <p>
+                    El conjunto de datos usado para realizar cada una de las partes anteriormente mencionadas recoge los accidentes de bicicleta
+                    ocurridos en Reino Unido durante 1979 y 2018.
+                    La inspiración por la cual 
+                    se recogieron este tipo de datos surgió cuando se reconoció el ciclismo como deporte olímpico y el uso de la bicicleta 
+                    se popularizo por toda Europa. Esto trajo consigo multitud de accidentes puesto que ni los nuevos ciclistas ni los conductores estaban acostumbrados
+                    los unos a los otros entre otras causas como el estado de la carretera, el clima, la visibilidad u otros datos no cuantificables como el 
+                    mal comportamiento de alguno de los involucrados.<br><br> 
+                    Así los investigadores comenzaron a recabar datos de cada uno de los accidentes sucedidos con el propósito de encontrar patrones de consecuencia
+                    en los involucrados que permitiesen a los políticos encontrar soluciones y a la ciudadanía a andar con más cuidado según en qué condiciones desee utilizar la bicicleta.
+                </p>
+            </div>
+        </fieldset>
+        
+    </div>
     
 </div>
+
 {% endblock %}
 
-{% block scripts %}
-{# Adds the scripts and dependencies #}
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
-    </script>
-{% endblock %}
+
 </body>
 
 </html>
