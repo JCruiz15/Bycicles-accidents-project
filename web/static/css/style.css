@@ -60,23 +60,32 @@ body{
   border-width: 3px;
 }
 
-.home-link{
+.title{
   color: black;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
+.title:hover{
+  color: darkslategray;
+  cursor: pointer;
+}
+
+.home-link{
+  color: slategray;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
 .logoNav{
-  width: 90px;
-  height: 90px;
+  width: 40px;
+  height: 40px;
 }
 
 .widthBoxes{
   width: 600px;
   height: 90px;
 }
-
-
 
 .widthBoxes3{
   width: 500px;
@@ -214,7 +223,6 @@ iframe{
   }
   .home-link:hover{
     color:black;
-    font-size: x-large;
   }
 
   .btn{
