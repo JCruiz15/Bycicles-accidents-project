@@ -23,6 +23,10 @@ def index():
 def index_OWL():
     return render_template("OWL_index.jinja")
 
+@app.route("/OWL/consultas", methods=['GET', 'POST'])
+def OWL_queries():
+    return render_template("OWL_queries.jinja")
+
 @app.route("/XML", methods=['GET', 'POST'])
 def index_XML():
     return render_template("XML_index.jinja")
