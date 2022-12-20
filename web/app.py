@@ -27,6 +27,10 @@ def index_OWL():
 def OWL_queries():
     return render_template("OWL_queries.jinja")
 
+@app.route("/OWL/Ontologia", methods=['GET', 'POST'])
+def ontology():
+    return render_template("WebOWL.jinja")
+
 @app.route("/XML", methods=['GET', 'POST'])
 def index_XML():
     return render_template("XML_index.jinja")
