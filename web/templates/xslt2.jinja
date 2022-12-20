@@ -21,20 +21,21 @@ Adds the main content:
         <fieldset class="col-md-6 mb-6" style="height:500px">
         <div class="text-center" style="width=700px; height:100%; overflow:scroll">
             <a class="navbar-brand">
-                <img src="../static/img/codeXSLT1.png" alt="bike_accident" style="border-radius: 3px; width:700px;">
+                <img src="../static/img/codeXSLT2.png" alt="bike_accident" style="border-radius: 3px; width:700px;">
             </a>
         </div>
         </fieldset>
 
         <fieldset class="col-md-6 mb-6">
-            <legend class="my-2 row align-items-center justify-content-center">Transformación XML a XML</legend>
+            <legend class="my-2 row align-items-center justify-content-center">Transformación XML a HTML</legend>
             <div class="widthBoxes">
                 <p>
-                    Con esta transformación buscamos traducir los atributos y etiquetas, que originalmente, esta-
-                    ban en inglés. También hemos hecho unos pequeños cambios en la estructura, la fecha ahora
-                    está unida en una sola etiqueta cuando antes estaba dividida en tres. A su vez hemos creado la
-                    etiqueta "Detalles" para agrupar "Fecha", "Vehículos involucrados" y "Damnificados" dentro de
-                    ella
+                    Con esta segunda transformación xslt conseguimos de salida un archivo HTML que muestre
+                    una tabla con los datos XML de inicio. Para ello hemos creado la estructura de la tabla en
+                    HTML con las etiquetas "table", "thead", "tr", "th"; escribiendo los nombres de las columnas
+                    y aplicando un ’apply-templates’ para las filas. En la plantilla creada, seleccionamos la etiqueta
+                    XML con su respectiva columna de la tabla. La tabla se encuentra ordenada por la fecha de los
+                    accidentes.
                 </p>
                 <div>
                     <a class="custom-btn btn-5 text-center" href="/dataset" style="text-decoration: none;">Ver resultado</a>
@@ -48,7 +49,7 @@ Adds the main content:
                 <button type="button" class="custom-btn btn-5" onclick="location.href='/'">Volver Atrás</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
-                <button type="button" class="custom-btn btn-5">XML a HTML</button>
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/xslt1'">XML a XML</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
                 <button type="button" class="custom-btn btn-5">XQueries</button>

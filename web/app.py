@@ -34,7 +34,7 @@ def xslt1():
 
 @app.route("/xslt2", methods=['GET', 'POST'])
 def xslt2():
-    return render_template("index.jinja")
+    return render_template("xslt2.jinja")
 
 if __name__ == "__main__":
     # app.run(debug=True)
