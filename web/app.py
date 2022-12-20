@@ -18,18 +18,27 @@ app.config['SECRET_KEY'] = APP_SECRET_KEY
 def index():
     return render_template("index.jinja")
 
+@app.route("/XML", methods=['GET', 'POST'])
+def index_XML():
+    return render_template("XML_index.jinja")
 
-@app.route("/xml-xml", methods=['GET', 'POST'])
+
+@app.route("/XML/xml-xml", methods=['GET', 'POST'])
 def xml_xml():
     return render_template("xml-xml.jinja")
 
+    
+@app.route("/XML/xml-html/resultado", methods=['GET', 'POST'])
+def xml_html_result():
+    return render_template("")
 
-@app.route("/xml-html", methods=['GET', 'POST'])
+
+@app.route("/XML/xml-html", methods=['GET', 'POST'])
 def xml_html():
     return render_template("xml-html.jinja")
 
 
-@app.route("/xml-html/resultado", methods=['GET', 'POST'])
+@app.route("/XML/xml-html/resultado", methods=['GET', 'POST'])
 def xml_html_result():
     return render_template("bycicle_accidents.jinja")
 
