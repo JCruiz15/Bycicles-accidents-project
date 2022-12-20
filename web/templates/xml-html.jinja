@@ -19,9 +19,9 @@ Adds the main content:
 <div class="container-fluid text-white my-5">
     <div class="container-sm row justify-content-between min-vw-100">
         <fieldset class="col-md-6 mb-6" style="height:500px">
-        <div class="text-center" style="width=700px; height:100%; overflow:scroll">
+        <div class="contenedor text-center" style="width=700px; height:100%; overflow:scroll">
             <a class="navbar-brand">
-                <img src="../static/img/codeXSLT2.png" alt="bike_accident" style="border-radius: 3px; width:700px;">
+                <img src="../static/img/codeXSLT2.png" alt="bike_accident" style="border-radius: 3px; width:1000px;">
             </a>
         </div>
         </fieldset>
@@ -33,7 +33,7 @@ Adds the main content:
                     Con esta segunda transformación xslt conseguimos de salida un archivo HTML que muestre
                     una tabla con los datos XML de inicio. Para ello hemos creado la estructura de la tabla en
                     HTML con las etiquetas "table", "thead", "tr", "th"; escribiendo los nombres de las columnas
-                    y aplicando un ’apply-templates’ para las filas. En la plantilla creada, seleccionamos la etiqueta
+                    y aplicando un "apply-templates" para las filas. En la plantilla creada, seleccionamos la etiqueta
                     XML con su respectiva columna de la tabla. La tabla se encuentra ordenada por la fecha de los
                     accidentes.
                 </p>
@@ -49,7 +49,7 @@ Adds the main content:
                 <button type="button" class="custom-btn btn-5" onclick="location.href='/'">Volver Atrás</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
-                <button type="button" class="custom-btn btn-5" onclick="location.href='/xslt1'">XML a XML</button>
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/xml-xml'">XML a XML</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
                 <button type="button" class="custom-btn btn-5">XQueries</button>
