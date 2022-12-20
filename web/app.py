@@ -18,6 +18,10 @@ app.config['SECRET_KEY'] = APP_SECRET_KEY
 def index():
     return render_template("index.jinja")
 
+@app.route("/OWL", methods=['GET', 'POST'])
+def index_OWL():
+    return render_template("OWL_index.jinja")
+
 @app.route("/XML", methods=['GET', 'POST'])
 def index_XML():
     return render_template("XML_index.jinja")
