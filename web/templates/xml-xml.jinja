@@ -16,39 +16,39 @@ Adds the main content:
 - Information about the web
 - Buttons for submitting the file and showing the map
 #}
-<div class="main container-fluid text-white my-5">
+<div class="container-fluid text-white my-5">
     <div class="container-sm row justify-content-between min-vw-100">
-        <fieldset class="col-md-6 mb-6">
-        <div class="text-center">
+        <fieldset class="col-md-6 mb-6" style="height:500px">
+        <div class="text-center" style="width=700px; height:100%; overflow:scroll">
             <a class="navbar-brand">
-                <img src="../static/img/bike_acc.jpg" alt="bike_accident" style="border-radius: 3px;">
+                <img src="../static/img/codeXSLT1.png" alt="bike_accident" style="border-radius: 3px; width:700px;">
             </a>
         </div>
         </fieldset>
 
         <fieldset class="col-md-6 mb-6">
-            <legend class="my-2 row align-items-center justify-content-center">Acerca del proyecto</legend>
+            <legend class="my-2 row align-items-center justify-content-center">Transformación XML a XML</legend>
             <div class="widthBoxes">
                 <p>
-                    This a csv file visualization for vultures, and other birds, routes.
-                    In our app you will be able to submit your own files in csv format
-                    and choose which kind of map you would like to create, among
-                    several maps in 2D and 3D. Automatically
-                    the app will generate the map with your data in which you will watch
-                    simply your birds' movement.
-
-                    If you want to try the app just watch out the demos below.
+                    Con esta transformación buscamos traducir los atributos y etiquetas, que originalmente, esta-
+                    ban en inglés. También hemos hecho unos pequeños cambios en la estructura, la fecha ahora
+                    está unida en una sola etiqueta cuando antes estaba dividida en tres. A su vez hemos creado la
+                    etiqueta "Detalles" para agrupar "Fecha", "Vehículos involucrados" y "Damnificados" dentro de
+                    ella
                 </p>
+                <div>
+                    <a class="custom-btn btn-5 text-center" href="/dataset" style="text-decoration: none;">Ver resultado</a>
+                </div>
             </div>
         </fieldset>
 
 
         <div class="row col-md-12 px-3 justify-content-center align-text-center" style="padding-top: 100px;">
             <div class="col col-lg-2 mx-4 text-center">
-                <button type="button" class="custom-btn btn-5" onclick="location.href='/xml-html'">XML a HTML</button>
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/'">Volver Atrás</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
-                <button type="button" class="custom-btn btn-5" onclick="location.href='/xml-xml'">XML a XML</button>
+                <button type="button" class="custom-btn btn-5" onclick="location.href='/xslt2'">XML a HTML</button>
             </div>
             <div class="col col-lg-2 mx-4 text-center">
                 <button type="button" class="custom-btn btn-5">XQueries</button>

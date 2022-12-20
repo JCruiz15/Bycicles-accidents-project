@@ -19,22 +19,20 @@ def index():
     return render_template("index.jinja")
 
 
-@app.route("/dataset", methods=['GET', 'POST'])
-def dataset():
-    dta = pd.read_csv("./dataset/final_dataset_100samples.csv", sep=";", decimal=".")
-    print(dta.to_string())
-    return render_template("show_dataset.jinja", dataset=dta)
-    
+@app.route("/xml-xml", methods=['GET', 'POST'])
+def xml_xml():
+    return render_template("xml-xml.jinja")
 
 
-@app.route("/xslt1", methods=['GET', 'POST'])
-def xslt1():
-    return render_template("xslt1.jinja")
+@app.route("/xml-html", methods=['GET', 'POST'])
+def xml_html():
+    return render_template("xml-html.jinja")
 
 
-@app.route("/xslt2", methods=['GET', 'POST'])
-def xslt2():
-    return render_template("xslt2.jinja")
+@app.route("/xml-html/resultado", methods=['GET', 'POST'])
+def xml_html_result():
+    return render_template("bycicle_accidents.html")
+
 
 if __name__ == "__main__":
     # app.run(debug=True)
