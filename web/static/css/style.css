@@ -108,7 +108,7 @@ body{
 }
 
 main {
-  background: rgba(75, 59, 17, 0.5);
+  background: rgba(70, 59, 17, 0.5);
 }
 
 fieldset legend{
@@ -125,63 +125,6 @@ fieldset legend{
   align-items: center;
   justify-content: center;
   padding: 0.5em;
-}
-
-.drop-zone {
-  max-width: 400px;
-  min-width: 200px;
-  min-height: 225px;
-  margin-inline: 1em;
-  padding: 0.5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 20px;
-  cursor: pointer;
-  color: #cccccc;
-  border: 4px dashed #cccccc;
-  border-radius: 10px;
-  transition: color var(--transition-properties)
-}
-
-.drop-zone--over {
-  border-style: solid;
-}
-
-.drop-zone__input {
-  display: none;
-}
-
-.drop-zone__thumb {
-  width: 100px;
-  height: 145px;
-  border-radius: 10px;
-  overflow: hidden;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: start;
-  background-color: #cccccc;
-  position: relative;
-}
-
-.drop-zone__thumb::after {
-  content: attr(data-label);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 5px 0;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.75);
-  font-size: 14px;
-  text-align: center;
-}
-
-.drop-zone:hover{
-  border-color: hsl(0, 0%, 90%);
-  color:hsl(0, 0%, 90%);
 }
 
 .copyright-section{
